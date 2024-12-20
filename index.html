@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 10px;;
+            padding: 0;
+        }
+        
+        .container img{
+           width: 1450px;
+           height: 800px;
+           background-image: cover;
+           background-position: center;
+        }
+        .card1, .card2, .card3, .card4{
+        display: inline-block;
+        background: #fff;
+        border: 1px solid #050404;
+        border-radius: 8px;
+        /* animation: example 4s infinite ease-in-out; */
+        width: 250px;
+        margin: 10px;
+        margin-left: 50px;
+        text-align: center;
+        padding: 1rem;
+        box-shadow: 0 0 80px rgba(243, 243, 243, 0.589); 
+        }
+        .card1 img, .card2 img, .card3 img , .card4 img {
+        width: 200px;
+        height:200px;
+        border-radius: 8px;
+        margin: 10px;
+        }
+        .mybutton {
+        background-color: #00c3ff;
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: background-color 0.1s;
+        }
+
+    @media (max-width: 600px) {
+       .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+              }
+              .card1, .card2, .card3, .card4 {
+        width: 90%; 
+        margin: 10px 0;
+              }
+}
+
+
+ 
+ @media (max-width: 600px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+            .card1, .card2, .card3, .card4 {
+                width: 90%; 
+            }
+        }
+
+        
+        @media (min-width: 601px) and (max-width: 900px) {
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr); 
+                gap: 20px;
+            }
+            .card1, .card2, .card3, .card4 {
+                width: 100%; 
+            }
+        }
+
+        
+        @media (min-width: 901px) {
+            .cards {
+                justify-content: center;
+            }
+            .card1, .card2, .card3, .card4 {
+                width: 250px; 
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img src=" https://images.unsplash.com/photo-1730982045412-326c81810ace?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw3fHx8ZW58MHx8fHx8" alt="photo">
+</div>
+<div class="cards">
+    <div class="card1">
+            <img src="https://images.unsplash.com/photo-1719937050445-098888c0625e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button  class="mybutton">View Poject</button>
+
+        </div>
+        <div class="card2">
+            <img src="https://images.unsplash.com/photo-1719937050445-098888c0625e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button  class="mybutton">View Poject</button>
+
+        </div>
+        <div class="card3">
+            <img src="https://images.unsplash.com/photo-1719937050445-098888c0625e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button  class="mybutton">View Poject</button>
+
+        </div>
+        <div class="card4">
+            <img src="https://images.unsplash.com/photo-1719937050445-098888c0625e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="project">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed iusto alias atque vel a laudantium sunt commodi sequi eius. Natus reprehenderit pariatur ex nihil blanditiis officia quas fugit laborum accusantium?</p>
+            <button class="mybutton">View Poject</button>
+        </div>
+
+    </div>
+</body>
+</html>
